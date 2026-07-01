@@ -1,0 +1,232 @@
+/* ===== Sarasawati Child Clinic ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5fbff;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#0b74c4,#27a6ff);
+    color:white;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+header h1{
+    font-size:2.2rem;
+    font-weight:700;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1rem;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h2{
+    color:#0b74c4;
+    font-size:2.5rem;
+}
+
+.hero h3{
+    color:#666;
+    margin:15px 0;
+}
+
+.hero p{
+    max-width:900px;
+    margin:20px auto;
+    font-size:18px;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    border-radius:40px;
+    text-decoration:none;
+    color:white;
+    background:#0b74c4;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#065996;
+    transform:translateY(-3px);
+}
+
+/* Sections */
+
+section{
+    padding:60px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#0b74c4;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+/* Cards */
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin:20px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* Lists */
+
+ul{
+    list-style:none;
+}
+
+ul li{
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+/* Footer */
+
+footer{
+    background:#0b74c4;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* Floating Buttons */
+
+.call-btn,
+.whatsapp-btn{
+
+    position:fixed;
+    right:20px;
+    color:white;
+    text-decoration:none;
+    padding:14px 18px;
+    border-radius:50px;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.call-btn{
+
+    bottom:90px;
+    background:#0b74c4;
+
+}
+
+.whatsapp-btn{
+
+    bottom:20px;
+    background:#25D366;
+
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover{
+
+    opacity:.9;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header h1{
+
+font-size:28px;
+
+}
+
+.hero h2{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+section{
+
+padding:40px 20px;
+
+}
+
+.btn{
+
+display:block;
+
+margin:15px auto;
+
+width:220px;
+
+}
+
+}
+.certificate{
+background:#fff;
+padding:40px 20px;
+text-align:center;
+}
+
+.certificate img{
+width:100%;
+max-width:700px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,.2);
+margin:20px 0;
+}
+
+.certificate p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+line-height:1.7;
+}
