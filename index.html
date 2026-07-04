@@ -1,11 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sarasawati Child Clinic</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Saraswati Child Clinic | Dr. A. K. Pandey</title>
+
+<meta name="description"
+content="Saraswati Child Clinic, Mondh, Bhadohi. General Physician & Child Healthcare. Serving families with compassion for over 30 years.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <style>
 
@@ -13,112 +22,244 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins,sans-serif;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
 background:#f5fbff;
 color:#222;
+overflow-x:hidden;
 }
 
 header{
-background:#0b74c4;
-color:white;
-padding:18px;
-text-align:center;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#fff;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
 }
 
-header h1{
-font-size:34px;
+.logo{
+font-size:26px;
+font-weight:700;
+color:#0b74c4;
 }
 
-header p{
-font-size:18px;
-margin-top:8px;
+nav a{
+text-decoration:none;
+margin-left:20px;
+color:#333;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#0b74c4;
 }
 
 .hero{
-padding:60px 20px;
-text-align:center;
+
+margin-top:90px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:70px 8%;
+
+background:linear-gradient(135deg,#eaf7ff,#ffffff);
+
+flex-wrap:wrap;
+
 }
 
-.hero h2{
-font-size:42px;
+.hero-text{
+
+flex:1;
+
+min-width:320px;
+
+}
+
+.hero-text h1{
+
+font-size:52px;
+
 color:#0b74c4;
+
+margin-bottom:10px;
+
 }
 
-.hero p{
-margin-top:15px;
+.hero-text h2{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+}
+
+.hero-text p{
+
 font-size:18px;
+
 line-height:1.8;
-max-width:900px;
-margin:auto;
+
+margin-bottom:25px;
+
+max-width:650px;
+
+}
+
+.hero-img{
+
+flex:1;
+
+text-align:center;
+
+min-width:320px;
+
+}
+
+.hero-img img{
+
+width:360px;
+
+height:360px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid white;
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
 }
 
 .btn{
+
 display:inline-block;
-margin:12px;
-padding:14px 30px;
+
+margin:8px;
+
+padding:14px 28px;
+
 background:#0b74c4;
+
 color:white;
+
+border-radius:35px;
+
 text-decoration:none;
-border-radius:30px;
-font-weight:bold;
+
+font-weight:600;
+
+transition:.3s;
+
 }
 
-section{
-padding:60px 10%;
+.btn:hover{
+
+background:#065995;
+
+transform:translateY(-3px);
+
 }
 
-h3{
-color:#0b74c4;
-margin-bottom:20px;
-font-size:32px;
+.stats{
+
+display:flex;
+
+gap:25px;
+
+margin-top:35px;
+
+flex-wrap:wrap;
+
 }
 
-.card{
+.stat{
+
 background:white;
-padding:25px;
-margin-top:20px;
+
+padding:18px 25px;
+
 border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,.08);
-}
 
-ul li{
-margin:12px 0;
-font-size:18px;
-}
+box-shadow:0 8px 25px rgba(0,0,0,.08);
 
-footer{
-background:#0b74c4;
-color:white;
 text-align:center;
-padding:25px;
+
+min-width:160px;
+
+}
+
+.stat h3{
+
+color:#0b74c4;
+
+font-size:30px;
+
+}
+
+.stat p{
+
+margin-top:8px;
+
+font-size:15px;
+
+}
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:12px;
+
+}
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero-img{
+
 margin-top:40px;
+
 }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-color:white;
-font-weight:bold;
+.hero-img img{
+
+width:280px;
+
+height:280px;
+
 }
 
-.call{
-position:fixed;
-bottom:90px;
-right:20px;
-background:#0b74c4;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-color:white;
-font-weight:bold;
 }
 
 </style>
@@ -129,143 +270,910 @@ font-weight:bold;
 
 <header>
 
-<h1>Sarasawati Child Clinic</h1>
+<div class="logo">
+Saraswati Child Clinic
+</div>
 
-<p>Trusted Care for Every Child, Compassion for Every Family</p>
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#services">Services</a>
+
+<a href="#appointment">Appointment</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
 
 </header>
 
-<div class="hero">
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Saraswati Child Clinic</h1>
 
 <h2>Dr. A. K. Pandey</h2>
 
-<h3>BAMS | Paediatric Dip.</h3>
-
 <p>
 
-General Physician & Child Specialist with over <b>30 years of experience</b> providing compassionate and trusted healthcare to children and families.
+<b>General Physician & Child Healthcare Provider</b>
 
-Dr. A. K. Pandey is well known for his humble nature, caring attitude and strong bond with every patient.
+<br><br>
+
+Serving Families with Compassion for Over 30 Years.
+
+Dedicated to providing trusted healthcare,
+personal attention, and quality medical care
+for children and families.
+
+</p>
+
+<a class="btn"
+href="tel:+919415375568">
+
+<i class="fa-solid fa-phone"></i>
+
+Call Now
+
+</a>
+
+<a class="btn"
+href="https://wa.me/919415375568">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
+<a class="btn"
+href="#appointment">
+
+Book Appointment
+
+</a>
+
+<a class="btn"
+href="https://jsdl.in/DT-99A8AQFDIKG">
+
+Get Directions
+
+</a>
+
+<div class="stats">
+
+<div class="stat">
+
+<h3>30+</h3>
+
+<p>Years Experience</p>
+
+</div>
+
+<div class="stat">
+
+<h3>10000+</h3>
+
+<p>Happy Families</p>
+
+</div>
+
+<div class="stat">
+
+<h3>24×7</h3>
+
+<p>Emergency Support</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-img">
+
+<img src="doctor.jpg" alt="Dr A. K. Pandey">
+
+</div>
+
+</section>
+<!-- ================= ABOUT DOCTOR ================= -->
+
+<section id="about" style="padding:80px 8%;background:white;">
+
+<div style="text-align:center;margin-bottom:50px;">
+
+<h2 style="font-size:40px;color:#0b74c4;">About Dr. A. K. Pandey</h2>
+
+<p style="font-size:18px;color:#666;margin-top:15px;">
+Dedicated to compassionate healthcare and trusted medical service for children and families.
+</p>
+
+</div>
+
+<div style="display:flex;gap:40px;flex-wrap:wrap;align-items:center;">
+
+<div style="flex:1;min-width:300px;">
+
+<h3 style="color:#0b74c4;font-size:30px;margin-bottom:20px;">
+Serving Families with Compassion for Over 30 Years
+</h3>
+
+<p style="line-height:2;font-size:17px;">
+
+Dr. A. K. Pandey is a respected General Physician and Child Healthcare Provider serving Mondh, Bhadohi and nearby areas for more than three decades.
+
+His dedication, kindness, clinical experience and patient-first approach have earned the trust of thousands of families.
+
+Every patient receives personal attention with the aim of providing safe, affordable and quality healthcare.
 
 </p>
 
 <br>
 
-<a class="btn" href="tel:+919415375568">📞 Call Now</a>
+<p style="line-height:2;font-size:17px;">
 
-<a class="btn" href="https://wa.me/919415375568">💬 WhatsApp</a>
+The clinic focuses on preventive healthcare, accurate diagnosis, child wellness, vaccination, nutrition guidance and long-term family care.
 
-</div>
-
-<section>
-
-<h3>About Doctor</h3>
-
-<div class="card">
-
-Dr. A. K. Pandey has been serving the people of Mondh and nearby areas for more than three decades.
-
-His dedication, kindness and patient-first approach have earned the trust of thousands of families.
+</p>
 
 </div>
 
-</section>
+<div style="flex:1;min-width:300px;">
 
-<section>
+<div style="background:#f5fbff;padding:35px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.08);">
 
-<h3>Our Services</h3>
+<h3 style="color:#0b74c4;margin-bottom:25px;">
+Professional Highlights
+</h3>
 
-<div class="card">
+<ul style="line-height:2;font-size:17px;">
 
-<ul>
+<li>✔ 30+ Years of Medical Experience</li>
 
-<li>General Physician OPD</li>
+<li>✔ General Physician</li>
 
-<li>Child Specialist OPD</li>
+<li>✔ Child Healthcare Provider</li>
 
-<li>Emergency Medical Facility</li>
+<li>✔ Compassionate Patient Care</li>
 
-<li>Vaccination Services</li>
+<li>✔ Vaccination Services</li>
 
-<li>Clean Ward Facility</li>
+<li>✔ Emergency Medical Support</li>
 
-<li>Bed Facility Available</li>
+<li>✔ Swarnaprashan Programme</li>
 
-<li>Safe Drinking Water</li>
-
-<li>Follow-up Consultation</li>
+<li>✔ Trusted by Thousands of Families</li>
 
 </ul>
 
 </div>
 
-</section>
-
-<section>
-
-<h3>Special Service</h3>
-
-<div class="card">
-
-<h4>🌿 Monthly Swarnaprashan Program</h4>
-
-<br>
-
-Available once every month at a highly discounted price.
-
-Prior appointment is compulsory.
-
-Limited slots available.
+</div>
 
 </div>
 
 </section>
 
-<section>
+<!-- ================= WHY CHOOSE US ================= -->
 
-<h3>Contact Us</h3>
+<section style="padding:80px 8%;background:#f5fbff;">
+
+<div style="text-align:center;">
+
+<h2 style="font-size:40px;color:#0b74c4;">
+Why Choose Saraswati Child Clinic?
+</h2>
+
+<p style="margin-top:15px;color:#666;">
+Quality Healthcare with Compassion and Trust
+</p>
+
+</div>
+
+<div style="display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:50px;">
 
 <div class="card">
 
-<b>Sarasawati Child Clinic</b>
+<h3>👨‍⚕️ Experienced Doctor</h3>
+
+<p>
+Over three decades of trusted medical practice dedicated to child and family healthcare.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💙 Compassionate Care</h3>
+
+<p>
+Every child is treated with patience, kindness and individual attention.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💉 Complete Child Care</h3>
+
+<p>
+Vaccination, fever management, growth monitoring and preventive healthcare.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏥 Affordable Treatment</h3>
+
+<p>
+Quality healthcare at reasonable cost for every family.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌿 Swarnaprashan</h3>
+
+<p>
+Monthly Swarnaprashan Programme for child wellness and immunity support.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📍 Easy Location</h3>
+
+<p>
+Conveniently located behind Mondh Railway Station with easy access.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services" style="padding:80px 8%;background:white;">
+
+<div style="text-align:center;">
+
+<h2 style="font-size:40px;color:#0b74c4;">
+Our Services
+</h2>
+
+<p style="margin-top:15px;color:#666;">
+Comprehensive healthcare for children and families.
+</p>
+
+</div>
+
+<div style="display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:50px;">
+
+<div class="card">
+<h3>🩺 General Consultation</h3>
+<p>Comprehensive consultation for all common illnesses and medical concerns.</p>
+</div>
+
+<div class="card">
+<h3>👶 Child Healthcare</h3>
+<p>Routine child check-ups, growth monitoring and developmental guidance.</p>
+</div>
+
+<div class="card">
+<h3>💉 Vaccination</h3>
+<p>Complete immunization services according to recommended schedules.</p>
+</div>
+
+<div class="card">
+<h3>🤒 Fever & Infection Care</h3>
+<p>Diagnosis and treatment of fever, cough, cold and common infections.</p>
+</div>
+
+<div class="card">
+<h3>🥗 Nutrition Guidance</h3>
+<p>Advice for healthy growth, nutrition and overall child development.</p>
+</div>
+
+<div class="card">
+<h3>🚑 Emergency Care</h3>
+<p>Immediate medical attention for urgent healthcare needs.</p>
+</div>
+
+<div class="card">
+<h3>🛏 Bed Facility</h3>
+<p>Comfortable observation and patient care facilities.</p>
+</div>
+
+<div class="card">
+<h3>🌿 Swarnaprashan Programme</h3>
+<p>Monthly programme with prior appointment for eligible children.</p>
+</div>
+
+</div>
+
+</section>
+  <!-- ================= SWARNAPRASHAN ================= -->
+
+<section id="swarnaprashan" style="padding:80px 8%;background:#eef9ff;">
+
+<div style="text-align:center;margin-bottom:50px;">
+
+<h2 style="font-size:40px;color:#0b74c4;">
+🌿 Swarnaprashan Programme
+</h2>
+
+<p style="font-size:18px;color:#666;margin-top:15px;">
+Traditional Ayurvedic immunity support for children.
+</p>
+
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:35px;">
+
+<div class="card">
+
+<h3>Benefits</h3>
+
+<ul style="line-height:2;font-size:17px;">
+
+<li>✔ Supports immunity</li>
+
+<li>✔ Helps healthy growth & development</li>
+
+<li>✔ Improves memory & concentration</li>
+
+<li>✔ Enhances digestion</li>
+
+<li>✔ Promotes overall well-being</li>
+
+<li>✔ Monthly programme under doctor's guidance</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Important Information</h3>
+
+<p style="line-height:2;font-size:17px;">
+
+• Conducted once every month.<br><br>
+
+• Prior appointment is compulsory.<br><br>
+
+• Please mention your child's age while booking.<br><br>
+
+• Limited slots available every month.
+
+</p>
+
+<a class="btn"
+href="https://wa.me/919415375568?text=Hello Doctor, I would like to book a Swarnaprashan appointment for my child.">
+
+Book Swarnaprashan
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= APPOINTMENT ================= -->
+
+<section id="appointment" style="padding:80px 8%;background:white;">
+
+<div style="text-align:center;">
+
+<h2 style="font-size:40px;color:#0b74c4;">
+📅 Book an Appointment
+</h2>
+
+<p style="margin-top:15px;color:#666;">
+Choose the appointment type below.
+</p>
+
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:35px;margin-top:50px;">
+
+<div class="card">
+
+<h3>👨‍⚕️ General Consultation</h3>
+
+<p style="line-height:2;">
+
+Book an appointment for:
 
 <br><br>
 
-Behind Mondh Railway Station
+✔ Fever
 
 <br>
 
-Station Road, Mondh
+✔ Cough & Cold
 
 <br>
 
-Bhadohi - 221406
+✔ Child Check-up
+
+<br>
+
+✔ Vaccination
+
+<br>
+
+✔ Nutrition Advice
+
+<br>
+
+✔ Follow-up Visit
+
+</p>
+
+<a class="btn"
+
+href="https://wa.me/919415375568?text=Hello Doctor, I would like to book a General Consultation appointment.">
+
+Book Now
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>🌿 Swarnaprashan Appointment</h3>
+
+<p style="line-height:2;">
+
+Monthly Swarnaprashan Programme.
 
 <br><br>
+
+Prior appointment compulsory.
+
+<br>
+
+Please mention child's age.
+
+<br>
+
+Limited monthly slots.
+
+</p>
+
+<a class="btn"
+
+href="https://wa.me/919415375568?text=Hello Doctor, I would like to book a Swarnaprashan appointment.">
+
+Book Now
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery" style="padding:80px 8%;background:#f5fbff;">
+
+<div style="text-align:center;">
+
+<h2 style="font-size:40px;color:#0b74c4;">
+Clinic Gallery
+</h2>
+
+<p style="margin-top:15px;color:#666;">
+Photos will be added here.
+</p>
+
+</div>
+
+<div style="display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:50px;">
+
+<div style="height:220px;background:white;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:600;color:#0b74c4;box-shadow:0 10px 25px rgba(0,0,0,.08);">
+Doctor Photo
+</div>
+
+<div style="height:220px;background:white;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:600;color:#0b74c4;box-shadow:0 10px 25px rgba(0,0,0,.08);">
+Clinic Exterior
+</div>
+
+<div style="height:220px;background:white;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:600;color:#0b74c4;box-shadow:0 10px 25px rgba(0,0,0,.08);">
+Waiting Area
+</div>
+
+<div style="height:220px;background:white;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:600;color:#0b74c4;box-shadow:0 10px 25px rgba(0,0,0,.08);">
+OPD Room
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section style="padding:80px 8%;background:#0b74c4;color:white;">
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;text-align:center;">
+
+<div>
+<h2 style="font-size:48px;">30+</h2>
+<p>Years of Service</p>
+</div>
+
+<div>
+<h2 style="font-size:48px;">10000+</h2>
+<p>Happy Families</p>
+</div>
+
+<div>
+<h2 style="font-size:48px;">50000+</h2>
+<p>Patients Treated</p>
+</div>
+
+<div>
+<h2 style="font-size:48px;">100%</h2>
+<p>Dedicated Care</p>
+</div>
+
+</div>
+
+</section>
+  <!-- ================= PATIENT REVIEWS ================= -->
+
+<section id="reviews" style="padding:80px 8%;background:white;">
+
+<div style="text-align:center;margin-bottom:50px;">
+
+<h2 style="font-size:40px;color:#0b74c4;">
+⭐ What Our Patients Say
+</h2>
+
+<p style="color:#666;font-size:18px;">
+The trust of our patients is our greatest achievement.
+</p>
+
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;">
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<h3>Excellent Care</h3>
+<p>
+"The doctor listens patiently and provides excellent treatment.
+We always feel satisfied after every visit."
+</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<h3>Highly Trusted</h3>
+<p>
+"Dr. A. K. Pandey has been treating our family for years.
+Professional, kind and experienced."
+</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<h3>Friendly Environment</h3>
+<p>
+"Clean clinic, polite staff and proper guidance for every child."
+</p>
+</div>
+
+</div>
+
+<br><br>
+
+<div style="text-align:center;">
+
+<a class="btn"
+href="https://jsdl.in/DT-99A8AQFDIKG">
+
+⭐ View Reviews
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<section style="padding:80px 8%;background:#eef8ff;">
+
+<div style="text-align:center;">
+
+<h2 style="font-size:40px;color:#0b74c4;">
+Frequently Asked Questions
+</h2>
+
+</div>
+
+<div style="margin-top:40px;">
+
+<div class="card">
+
+<h3>What are the clinic timings?</h3>
+
+<p>9:00 AM to 8:00 PM (Please confirm before visiting on holidays).</p>
+
+</div>
+
+<div class="card">
+
+<h3>Do I need an appointment?</h3>
+
+<p>Walk-in patients are welcome, but appointments are recommended for faster service.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Is Swarnaprashan available every day?</h3>
+
+<p>No. It is conducted once every month. Prior booking is compulsory.</p>
+
+</div>
+
+<div class="card">
+
+<h3>How can I contact the clinic?</h3>
+
+<p>You can call or send a WhatsApp message using the buttons below.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" style="padding:80px 8%;background:white;">
+
+<div style="text-align:center;">
+
+<h2 style="font-size:40px;color:#0b74c4;">
+Contact Us
+</h2>
+
+<p style="color:#666;">
+We are always happy to help you.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Saraswati Child Clinic</h3>
+
+<p>
+
+📍 Behind Mondh Railway Station<br>
+
+Station Road, Mondh<br>
+
+Bhadohi - 221406<br>
+
+Uttar Pradesh
+
+</p>
+
+<br>
+
+<p>
 
 📞 +91 9415375568
 
-<br><br>
+</p>
 
-🕘 9:00 AM - 8:00 PM
+<br>
+
+<p>
+
+🕘 Clinic Timings<br>
+
+9:00 AM – 8:00 PM
+
+</p>
+
+<br>
+
+<a class="btn"
+
+href="tel:+919415375568">
+
+Call Clinic
+
+</a>
+
+<a class="btn"
+
+href="https://wa.me/919415375568">
+
+WhatsApp
+
+</a>
+
+<a class="btn"
+
+href="https://jsdl.in/DT-99A8AQFDIKG">
+
+Get Directions
+
+</a>
 
 </div>
 
 </section>
 
-<footer>
+<!-- ================= FOOTER ================= -->
 
-© 2026 Sarasawati Child Clinic
+<footer style="background:#0b74c4;color:white;padding:50px 8%;text-align:center;">
+
+<h2>Saraswati Child Clinic</h2>
+
+<p style="margin-top:15px;">
+
+Serving Families with Compassion for Over 30 Years
+
+</p>
 
 <br>
 
-Designed with ❤️ for better healthcare.
+<p>
+
+© 2026 Saraswati Child Clinic
+
+<br><br>
+
+Designed with ❤️ for Better Healthcare
+
+</p>
 
 </footer>
 
-<a class="call" href="tel:+919415375568">Call</a>
+<!-- Floating Buttons -->
 
-<a class="whatsapp" href="https://wa.me/919415375568">WhatsApp</a>
+<a href="tel:+919415375568"
+
+style="position:fixed;bottom:100px;right:20px;background:#0b74c4;color:white;padding:15px 18px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 10px 20px rgba(0,0,0,.2);z-index:999;">
+
+📞 Call
+
+</a>
+
+<a href="https://wa.me/919415375568"
+
+style="position:fixed;bottom:30px;right:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 10px 20px rgba(0,0,0,.2);z-index:999;">
+
+💬 WhatsApp
+
+</a>
+  <!-- ================= BACK TO TOP BUTTON ================= -->
+
+<button id="topBtn"
+style="
+display:none;
+position:fixed;
+bottom:30px;
+left:20px;
+z-index:999;
+padding:15px 18px;
+border:none;
+border-radius:50%;
+background:#0b74c4;
+color:white;
+font-size:18px;
+cursor:pointer;
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+transition:.3s;">
+↑
+</button>
+
+<script>
+
+// Back to Top Button
+
+let topButton = document.getElementById("topBtn");
+
+window.onscroll = function(){
+
+if(document.body.scrollTop>300 || document.documentElement.scrollTop>300){
+
+topButton.style.display="block";
+
+}else{
+
+topButton.style.display="none";
+
+}
+
+};
+
+topButton.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+// Fade Animation
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+
+entry.target.style.transform="translateY(0px)";
+
+}
+
+});
+
+});
+
+document.querySelectorAll("section").forEach(section=>{
+
+section.style.opacity="0";
+
+section.style.transform="translateY(50px)";
+
+section.style.transition="all .8s ease";
+
+observer.observe(section);
+
+});
+
+// Welcome Message
+
+setTimeout(function(){
+
+console.log("Welcome to Saraswati Child Clinic");
+
+},1000);
+
+</script>
 
 </body>
+
 </html>
